@@ -271,14 +271,243 @@ button:hover{
 .flex{
 	display: flex;
 	/*justify-content: space-between;*/
-	justify-content: space-around;
+	/*justify-content: space-around;*/
+	/*flex-direction: row-reverse;*/
+	flex-direction: column-reverse;
 }
 .flex div{
 	width: 150px;
 	height: 150px;
 	background: darkblue;
+	text-align: center;
+	font-size: 50px;
+	color: white;
 }
 /********************FIN PAGE POSITION******************************/
+
+/********************DEBUT PAGE ZONING******************************/
+#zoning1{
+	background: #ffd6d6;
+	width: 800px;
+}
+#zoning1 header{
+	background: #fca7a7;
+	height: 70px;
+}
+#zoning1 aside{
+background: #18587a;
+width: 20%;
+height: 500px;
+float: left;
+}
+#zoning1 section{
+background: #fc624d;
+width: 80%;
+height: 500px;
+float: left;
+margin: 0;
+padding: 0;
+}
+
+#zoning2{
+	background: #8025D7;
+	width: 800px;
+}
+#zoning2 header{
+	background: #560F5A;
+	height: 70px;
+}
+#zoning2 aside{
+	background: #5A0F13;
+	width: 15%;
+	height: 500px;
+	float: left;
+}
+#zoning2 section{
+	background: #5C2D30;
+	width: 70%;
+	height: 500px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#zoning3 section{
+	background: #5C2D30;
+	width: 45%;
+	height: 500px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#zoning3 aside{
+	background: red;
+	width: 43%;
+	height: 500px;
+	float: left;
+}
+#zoning3 footer{
+	background: #560F5A;
+	height: 90px;
+	width: 845px;
+}
+
+#zoning4{
+	background: #fff;
+	width: 800px;
+	border: 1px solid black;
+}
+#zoning4 header{
+	background: #560F5A;
+	height: 70px;
+	text-align: center;
+}
+#zoning4 nav{
+	background: #C64148;
+	height: 70px;
+	border-bottom: 10px solid #8F5A5D;
+	text-align: center;
+}
+#zoning4 section{
+	background: #8F5A5D;
+	height: 500px;
+	margin: 20px;
+	text-align: center;
+	padding: 0;
+}
+#zoning4 footer{
+	background: #8F5A82;
+	height: 90px;
+	width: 798px;
+	text-align: center;
+}
+
+#zoning5{
+	background: #fff;
+	width: 800px;
+	border: 1px solid black;
+}
+#zoning5 header{
+	background: #560F5A;
+	height: 70px;
+	text-align: center;
+}
+#zoning5 nav{
+	background: #C64148;
+	height: 70px;
+	border-bottom: 10px solid #8F5A5D;
+	text-align: center;
+}
+#zoning5 section{
+	background: white;
+	height: 500px;
+	margin: 20px;
+	text-align: center;
+	padding: 0;
+}
+.c1{
+  float:left;
+  width: 50%;
+  height:50%;
+  background-color: blue;
+}
+.c2{
+  float: right;
+  width: 50%;
+  height:50%;
+  background-color: red;
+}
+.c3{
+  float: left;
+  width: 50%;
+  height:50%;
+  background-color: green;
+}
+.c4{
+float: right;
+width: 50%;
+height: 50%;
+background-color: yellow;
+}
+#zoning5 footer{
+	background: #8F5A82;
+	height: 90px;
+	width: 798px;
+	text-align: center;
+}
+#zoning6{
+	background: #fff;
+	width: 800px;
+	border: 1px solid black;
+}
+#zoning6 header{
+	background: white;
+	height: 70px;
+	text-align: center;
+}
+.a{
+	float: left;
+	width: 25%;
+	height: 100%;
+	background-color: yellow;
+}
+.b{
+	float: left;
+	width: 47%;
+	height: 98%;
+	background-color: #FFF1A8;
+}
+.c{
+	float: right;
+	width: 28%;
+	height: 100%;
+	background-color: #FF8F56;
+}
+}
+#zoning6 nav{
+	background: #C64148;
+	height: 70px;
+	text-align: center;
+}
+#zoning6 aside{
+	float: left;
+	background: red;
+	width: 80%;
+	height: 500px;
+}
+#zoning6 section{
+	height: 150px;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	width: 50%;
+	float: left;
+}
+.e{
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #FF8F56;
+}
+.f{
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #984A59;
+}
+.jaune{
+	width: 20%;
+	height: 50%;
+	background-color: #2D5C7F;
+	float: left;
+}
+#zoning6 footer{
+	background: #8F5A82;
+	height: 90px;
+	width: 798px;
+	text-align: center;
+}
+/********************FIN PAGE ZONING******************************/
 
 
 
