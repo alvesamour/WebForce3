@@ -472,7 +472,7 @@ background-color: yellow;
 #zoning6 aside{
 	float: left;
 	background: red;
-	width: 80%;
+	width: 20%;
 	height: 500px;
 }
 #zoning6 section{
@@ -500,6 +500,24 @@ background-color: yellow;
 	height: 50%;
 	background-color: #2D5C7F;
 	float: left;
+}
+.g{
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #c246c6;
+}
+.h{
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #91157e;
+}
+.i{
+	float: left;
+	width: 20%;
+	height: 50%;
+	background-color: #5a5d9d;
 }
 #zoning6 footer{
 	background: #8F5A82;
