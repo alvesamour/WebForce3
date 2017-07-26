@@ -187,8 +187,8 @@ img[src="img/toureiffel.jpg"] {
 }
 .absolute{
 	position: absolute;
-	top: 10%;
-	left:  22%;
+	top: 15%;
+	left:  5%;
 	background: orange;
 	width: 100px;
 	height: 100px;
@@ -312,6 +312,7 @@ button:hover{
 	font-size: 50px;
 	color: white;
 }
+
 /********************FIN PAGE POSITION******************************/
 
 /********************DEBUT PAGE ZONING******************************/
@@ -658,19 +659,17 @@ main{
 	padding-bottom: 50px;
 }
 table{
-    border: 2px solid black;
+    border: 2px solid #631357;
     border-collapse: collapse;
     margin: 0 auto;
 }
 thead, tfoot{
     border: 2px solid #631357;
-}
-tbody{
-    border: 1px solid #d8cbbb;
+		background: #6BC2E8;
 }
 td{
     font-size: 100%;
-    border: 1px solid #8aacff;
+    border: 1px solid #631357;
     text-align: center;
     padding: 5px;
 }
