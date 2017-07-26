@@ -24,9 +24,10 @@ time, mark, audio, video {
 h1{
 	font-size: 45px;
 	color: #02E0DA;
-	margin-top: 50px;/*marge exterieur supérieur*/
+	margin-top: 0px;/*marge exterieur supérieur*/
 	text-align: center;
 	font-family: 'Lemonada', cursive;
+	padding-top: 40px;
 }
 h2{
 	font-size: 35px;
@@ -71,6 +72,34 @@ footer{
     background: #2980b9;
     height: 30px;
 }
+/********************DEBUT HEADER******************************/
+header{
+	background: #2c3e50;
+}
+#logo{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding: 15px;
+}
+#slogan{
+	width: 50%;
+	float: left;
+	height: 100px;
+}
+#reseauxSociaux{
+	width: 25%;
+	float: left;
+}
+#reseauxSociaux i{
+	color: #e3e8f8;
+	font-size: 30px;
+	display: block;
+	text-align: right;
+	padding: 12px 30px 0 0;
+}
+/********************FIN HEADER******************************/
+
 /********************DEBUT PAGE TEXTE******************************/
 
 .Gloria p{
@@ -442,7 +471,7 @@ background-color: yellow;
 }
 #zoning6 header{
 	background: white;
-	height: 70px;
+	height: 170px;
 	text-align: center;
 }
 .a{
@@ -454,7 +483,7 @@ background-color: yellow;
 .b{
 	float: left;
 	width: 47%;
-	height: 98%;
+	height: 100%;
 	background-color: #FFF1A8;
 }
 .c{
@@ -462,7 +491,6 @@ background-color: yellow;
 	width: 28%;
 	height: 100%;
 	background-color: #FF8F56;
-}
 }
 #zoning6 nav{
 	background: #C64148;
@@ -480,43 +508,49 @@ background-color: yellow;
 	margin: 0;
 	text-align: center;
 	padding: 0;
-	width: 50%;
+	width: 80%;
 	float: left;
 }
 .e{
 	float: left;
-	width: 20%;
-	height: 50%;
+	width: 50%;
+	height: 100%;
 	background-color: #FF8F56;
 }
 .f{
 	float: left;
-	width: 20%;
-	height: 50%;
+	width: 25%;
+	height: 133%;
 	background-color: #984A59;
+}
+.s{
+	float: left;
+	width: 50%;
+	height: 100%;
+	background-color: lavender;
 }
 .jaune{
 	width: 20%;
-	height: 50%;
+	height: 100%;
 	background-color: #2D5C7F;
 	float: left;
 }
 .g{
 	float: left;
-	width: 20%;
-	height: 50%;
+	width: 25%;
+	height: 133%;
 	background-color: #c246c6;
 }
 .h{
 	float: left;
-	width: 20%;
-	height: 50%;
+	width: 25%;
+	height: 133%;
 	background-color: #91157e;
 }
 .i{
 	float: left;
-	width: 20%;
-	height: 50%;
+	width: 25%;
+	height: 133%;
 	background-color: #5a5d9d;
 }
 #zoning6 footer{
@@ -525,8 +559,125 @@ background-color: yellow;
 	width: 798px;
 	text-align: center;
 }
+#zoning7{
+    /*background: yellow;*/
+    width: 800px;
+    border: 2px solid;
+    margin: 0 auto;
+}
+
+#zoning7 header{
+    color: black;
+    background: #109e04 ;
+    height: 90px;
+    text-align: center;
+}
+
+.haut1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: darkblue;
+}
+
+.haut2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: pink;
+}
+
+.haut3{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: blue;
+}
+
+#zoning7 nav{
+    background: #9a40a4 ;
+    height: 30px;
+    border: none;
+}
+
+#zoning7 aside{
+background: blue;
+width: 20%;
+height: 650px;
+float: left;
+}
+
+#zoning7 section{
+width: 80%;
+float: left;
+margin: 0;
+padding: 0;
+}
+
+section.slideshow{
+    background: pink;
+    height: 250px;
+}
+
+#zoning7 .a{
+    background: red;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+#zoning7 .b{
+    background: yellow;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+#zoning7 .c{
+    background: green;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning7 .d{
+    background: lavender;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning7 footer{
+    background: purple;
+    height: 50px;
+}
 /********************FIN PAGE ZONING******************************/
 
+/********************DEBUT PAGE TABLEAU******************************/
+main{
+	padding-bottom: 50px;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+thead, tfoot{
+    border: 2px solid #631357;
+}
+tbody{
+    border: 1px solid #d8cbbb;
+}
+td{
+    font-size: 100%;
+    border: 1px solid #8aacff;
+    text-align: center;
+    padding: 5px;
+}
+th{
+	border:  1px solid #631357;
+}
+/********************FIN PAGE TABLEAU******************************/
 
 
 
