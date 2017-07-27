@@ -21,6 +21,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }/* RESET */
+body{
+	scroll-behavior: smooth;
+}
 h1{
 	font-size: 45px;
 	color: #02E0DA;
@@ -217,6 +220,12 @@ button{
 	background: transparent;
 	font-size: 350%;
 	color: #8564AE;
+}
+#logo a{
+	color:#8564AE;
+}
+#logo a:active{
+	color: #33cccc;
 }
 button:hover{
 	color: #33cccc;
@@ -659,24 +668,90 @@ main{
 	padding-bottom: 50px;
 }
 table{
-    border: 2px solid #631357;
+    border: 3px solid #631357;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 0 auto;/*pour le tableau pas besoin de mettre un largeur mais pour tout les éléments de type block il faut insérer une largeur*/
 }
 thead, tfoot{
     border: 2px solid #631357;
-		background: #6BC2E8;
+	background: #E3E8F8;
 }
 td{
     font-size: 100%;
     border: 1px solid #631357;
-    text-align: center;
+	text-align: center;
     padding: 5px;
 }
 th{
 	border:  1px solid #631357;
+	padding: 5px;
 }
 /********************FIN PAGE TABLEAU******************************/
+
+/********************DEBUT PAGE LISTE******************************/
+/*ul .fruit il ne selectionne que ce qu'il y a l'intérieur de l'élément*/
+
+ul.fruit /*quand il n'y a pas d'espace ça veut dire qu'il selectionne tout les éléments*/{
+	list-style-type:none;
+}
+ul.fruit li{
+	display: inline;
+	margin: 10px;
+}
+li .fa{
+	color: #8E9FE6;
+	font-size: 80%;
+}
+ul.imbriquee li:before{
+	content: "\2022";
+	margin-right: 10px;
+	color: #6CE6DD;
+}
+.imbriquee, .imbriquee ul{
+	list-style-type: none;
+	padding-left: 15px;
+	font-style: italic;
+}
+.imbriquee{
+	cursor: pointer;
+}
+.imbriquee ul{
+	display: none;
+}
+.europe:hover ul{
+	display: block;
+}
+.asie:hover ul{
+	display: block;
+}
+ol{
+	margin-left: 30px;
+}
+dl{
+	margin-left: 16px;
+}
+/********************FIN PAGE LISTE******************************/
+
+/********************DEBUT PAGE LIEN/MENU******************************/
+.ancre{
+	margin-left: 500px;
+}
+.ancre a{
+	background: #A9EEE6;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: 1s;
+	margin-right: 10px;
+	font-size: 15px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+.ancre a:hover{
+	background:linear-gradient(#CADEFC, #C3BEF0);
+	box-shadow: none;
+}
+/********************FIN PAGE LIEN/MENU******************************/
 
 
 
