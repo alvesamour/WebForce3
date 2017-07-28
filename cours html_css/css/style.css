@@ -37,6 +37,7 @@ h2{
 	color: #B5E5E4;
 	padding: 20px;
 	font-weight: bold;/*mettre en gras (gérer le gras/l'épaisseur de la police)*/
+	text-decoration: none;
 }
 h3{
 	font-size: 22px;
@@ -56,7 +57,8 @@ header{
 }
 nav{
     background: #2980b9;
-    height: 50px;
+    padding: 26px;
+	text-align: center;
 }
 main{
     background: #ecf0f1;
@@ -692,7 +694,7 @@ th{
 /*ul .fruit il ne selectionne que ce qu'il y a l'intérieur de l'élément*/
 
 ul.fruit /*quand il n'y a pas d'espace ça veut dire qu'il selectionne tout les éléments*/{
-	list-style-type:none;
+	text-align: center;
 }
 ul.fruit li{
 	display: inline;
@@ -733,6 +735,7 @@ dl{
 /********************FIN PAGE LISTE******************************/
 
 /********************DEBUT PAGE LIEN/MENU******************************/
+			/******************Lien***************************/
 .ancre{
 	margin-left: 500px;
 }
@@ -740,7 +743,7 @@ dl{
 	background: #A9EEE6;
 	color: white;
 	border-radius: 5px;
-	text-decoration: none;
+	text-decoration: none;/*enlève le soulignement des liens*/
 	transition: 1s;
 	margin-right: 10px;
 	font-size: 15px;
@@ -751,7 +754,113 @@ dl{
 	background:linear-gradient(#CADEFC, #C3BEF0);
 	box-shadow: none;
 }
+#liens a{
+	text-decoration: none;
+	color: #6CE6DD;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+#liens a:hover{
+	color: #6892D5;
+}
+nav a{
+	border-radius: 5px;
+	background: #6A759B;
+	padding: 7px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+	color: #6CE6DD;
+	margin: 7px;
+	text-decoration: none;
+	transition: 1s;
+}
+nav a:hover{
+	box-shadow: none;
+	cursor: pointer;
+}
+nav a.activ{
+	background: #21273D;
+	color: white;
+}
+			/******************FIN Lien***************************/
+
+			/******************Menu***************************/
+#menu nav{
+	background: transparent;
+	border: none;
+}
+#menu ul{
+	list-style-type: none;
+	text-align: center;
+}
+#menu ul li{
+	display: inline-block;
+}
+#menu nav a{
+	padding: 10px;
+	color:#666;
+	text-decoration: none;
+	background: #ddd;
+	transition: 1s ease-in;
+}
+#menu nav a:hover{
+	color: #fff;
+	background: #069;
+}
+			/******************FIN Menu***************************/
+
 /********************FIN PAGE LIEN/MENU******************************/
+
+/********************DEBUT PAGE FORMULAIRE******************************/
+form{
+	width: 60%;
+	background:#8E9FE6;
+	margin: 0 auto;
+	padding: 20px;
+	color: #383746;
+	border-radius: 15px;
+	border: 2px solid black;
+}
+label{
+	margin: 10px 0;
+	width: 50%;
+	display: inline-block;
+}
+textarea{
+	resize: none;
+}
+label[for="orange"], label[for="fraise"], label[for="abricot"] {
+	width: 10%;
+}
+/********************FIN PAGE FORMULAIRE******************************/
+
+/********************DEBUT PAGE MULTIMEDIA******************************/
+.videoFond{
+	padding-left: 0;
+	padding-right: 0;
+}
+.videoFond video{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+.videoTexte{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+.videoFond p{
+	position: absolute;
+	z-index:2;
+	width: 500px;
+	margin: auto;
+	background: rgba(255, 255, 255, .60);
+	left: 250px;
+	top: 100px;
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 10px;
+}
+/********************FIN PAGE MULTIMEDIA******************************/
 
 
 

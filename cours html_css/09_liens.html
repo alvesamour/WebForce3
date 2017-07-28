@@ -14,10 +14,11 @@
         <header>
             <!-- Zone du haut, ex : bannière, logo, slogan -->
             <div id="logo"><a href="#logo"><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
-                <img src="img/logo.png" alt="logo">
+            <a href="01_index.html"><img src="img/logo.png" alt="logo"></a>
+
             </div>
             <div id="slogan">
-                <h1>Mon premier site en HTML/CSS</h1>
+            <h1>Mon premier site en HTML / CSS</h1>
             </div>
             <div id="reseauxSociaux">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -29,6 +30,20 @@
         </header>
         <nav>
             <!-- Zone du menu, les liens pour naviguer sur le site -->
+
+                <a href="01_index.html">Index</a>
+                <a href="02_texte.html">Texte</a>
+                <a href="03_selecteurs.html">Selecteurs</a>
+                <a href="04_image.html">Image</a>
+                <a href="05_position.html">Position</a>
+                <a href="06_zoning.html">Zoning</a>
+                <a href="07_tableaux.html">Tableaux</a>
+                <a href="08_listes.html">Listes</a>
+                <a href="09_liens.html" class="activ">Liens & Menus</a>
+                <a href="10_formulaire.html">Formulaire</a>
+                <a href="11_multimedia.html">Multimédia</a>
+                <a href="12_animation.html">Animations</a>
+
         </nav>
         <main>
             <h2>Liens & menus</h2>
@@ -39,25 +54,25 @@
             </div>
             <section id="liens">
                 <h3>Les liens</h3>
-                <a href="https://codepen.io" title="se rendre sur le site de CodePen">CodePen</a> is a social development environment for front-end designers and developers.<br>
-                <a href="http://www.google.fr" target="blank">Google</a> le moteur de recherche.<br>
+                <a href="https://codepen.io" title="se rendre sur le site de CodePen"><!--info bulle-->CodePen</a> is a social development environment for front-end designers and developers.<br>
+                <a href="http://www.google.fr" target="_blank"><!--permet de la mettre dans un nouvel ongle-->Google</a> le moteur de recherche.<br>
+                <a href="fichier/cv.doc">Télécharger mon CV</a><br><!--Permet de télécharger directement le fichier-->
+                <a href="fichier/cv.pdf" target="blank" title="Afficher dans un nouvel onglet">Voir mon CV</a><br><!--Affiche juste le fichier-->
+                <a href="fichier/cv.pdf" download>Voir mon CV</a><br><!--Pour forcer le téléchargement, on ajoute l'attribut download-->
+                <a href="#" onclick="window.print()">Imprimer la page</a><br><!--Propose directement le téléchargement de la page-->
+                <a href="http://www.facebook.fr" target="_blank"><img src="img/facebook.ico"></a><br>
+                Cliquez <a href="01_index.html">ici</a> pour vous rendre sur la page structure.<!--Pour se rendre d'une page à l'autre-->
             </section>
             <section id="menu">
                 <h3>Menu</h3>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
-                menu<br>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Réalisation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </section>
             <section id="menuDeroulant">
                 <h3>Menu Déroulant</h3>

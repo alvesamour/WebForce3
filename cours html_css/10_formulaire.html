@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head><!-- En-tête du document -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Mes formulaires en HTML/CSS"> <!-- Les moteurs de recherches s'en servent pour les recherches -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Les listes</title>
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lemonada|Old+Standard+TT" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body><!-- Corps du document -->
+        <header>
+            <!-- Zone du haut, ex : bannière, logo, slogan -->
+            <div id="logo"><a href="#logo"><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+            <a href="01_index.html"><img src="img/logo.png" alt="logo"></a>
+
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML / CSS</h1>
+            </div>
+            <div id="reseauxSociaux">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-snapchat" aria-hidden="true"></i>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <nav>
+            <!-- Zone du menu, les liens pour naviguer sur le site -->
+
+                <a href="01_index.html">Index</a>
+                <a href="02_texte.html">Texte</a>
+                <a href="03_selecteurs.html">Selecteurs</a>
+                <a href="04_image.html">Image</a>
+                <a href="05_position.html">Position</a>
+                <a href="06_zoning.html">Zoning</a>
+                <a href="07_tableaux.html">Tableaux</a>
+                <a href="08_listes.html">Listes</a>
+                <a href="09_liens.html">Liens & Menus</a>
+                <a href="10_formulaire.html" class="activ">Formulaire</a>
+                <a href="11_multimedia.html">Multimédia</a>
+                <a href="12_animation.html">Animations</a>
+
+        </nav>
+        <main>
+            <h2>Formulaire</h2>
+            <section class="formulaire">
+                <form method="post" action="url de destination" enctype="multipart/form-data"><!--method : comment les données vont circuler, enctype : envoie de fichier-->
+                    <label for="pseudo">Pseudo *</label><!--le label va toujours avec l'input-->
+                    <input type="text" id="pseudo" name="pseudo" required><br><br><!--required : alert si le champ n'est pas rempli-->
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="votre prenom"><br><br><!--placeholder : texte grisé-->
+
+                    <label for="mdp">Mot de passe *</label>
+                    <input type="password" id="mdp" name="mdp"><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="CV">CV </label>
+                    <input type="file" id="CV" name="CV"><br><br><!--file : permet de parcourir et choisir un fichier-->
+
+                    <p>Quels sont vos fruits préférés ?</p><br>
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" id="orange" name="orange" value="orange" checked><!--checked : permet de cocher automatiquement-->
+
+                    <label for="fraise">Fraise</label>
+                    <input type="checkbox" id="fraise" name="fraise" value="fraise">
+
+                    <label for="abricot">Abricot</label>
+                    <input type="checkbox" id="abricot" name="abricot" value="abricot"><br><br>
+
+                    <label for="cp">Code Postal</label>
+                    <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9] {5}" title="5 chiffres entre 0 et 9"><br><br><!--maxlenght : 5 caractères maximum, pattern : seulement des chiffres de 0 à 9-->
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="25"></textarea>
+
+                    <input type="submit" name="envoyer" value="Envoyer">
+                    <input type="reset" name="annuler" value="Annuler">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <!-- Zone du bas, ex : liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright -->
+        </footer>
+    </body>
+
+</html>
