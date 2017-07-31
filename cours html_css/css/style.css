@@ -44,6 +44,11 @@ h3{
 	color: #B5E5E4;
 	padding: 15px;
 }
+h4{
+	color:#8E9FE6;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
 blockquote{
 	font-style: italic;
 	font-size: 120%;
@@ -735,7 +740,7 @@ dl{
 /********************FIN PAGE LISTE******************************/
 
 /********************DEBUT PAGE LIEN/MENU******************************/
-			/******************Lien***************************/
+	/******************Lien***************************/
 .ancre{
 	margin-left: 500px;
 }
@@ -781,9 +786,9 @@ nav a.activ{
 	background: #21273D;
 	color: white;
 }
-			/******************FIN Lien***************************/
+	/******************FIN Lien***************************/
 
-			/******************Menu***************************/
+	/******************Menu***************************/
 #menu nav{
 	background: transparent;
 	border: none;
@@ -806,7 +811,48 @@ nav a.activ{
 	color: #fff;
 	background: #069;
 }
-			/******************FIN Menu***************************/
+	/******************FIN Menu******************/
+
+	/*************DEBUT Menu déroulant******************/
+#menuDeroulant{
+	height: 650px;
+}
+#menuDeroulant nav{
+	background: transparent;
+	border: none;
+	width: 90%;
+	margin: 0 auto;
+}
+#menuDeroulant nav ul li{
+	float: left;
+	list-style: none;
+	width: 20%;
+}
+#menuDeroulant nav ul ul{
+	display: none;
+}
+#menuDeroulant nav ul li ul li{
+	border-top: 1px solid #464646;
+	width: 100%;
+}
+#menuDeroulant nav li{
+	background: #ccc;
+}
+#menuDeroulant nav li a{
+	text-decoration: none;
+	color: #000;
+	padding: 4px 0 4px;
+	display: block;
+}
+#menuDeroulant nav ul{
+	text-align: center;
+}
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+	display: block;
+}
+
+	/*************FIN Menu déroulant******************/
+
 
 /********************FIN PAGE LIEN/MENU******************************/
 
@@ -850,7 +896,7 @@ label[for="orange"], label[for="fraise"], label[for="abricot"] {
 }
 .videoFond p{
 	position: absolute;
-	z-index:2;
+	z-index: 2;
 	width: 500px;
 	margin: auto;
 	background: rgba(255, 255, 255, .60);
@@ -860,7 +906,187 @@ label[for="orange"], label[for="fraise"], label[for="abricot"] {
 	font-size: 120%;
 	border-radius: 10px;
 }
+iframe[https://www.youtube.com/embed/JGwWNGJdvx8]{
+	width: 100%;
+}
+.audio{
+	text-align: center;
+}
+iframe[allowfullscreen]{
+	width: 100%;
+
+}
 /********************FIN PAGE MULTIMEDIA******************************/
+
+/********************DEBUT PAGE ANIMATION******************************/
+
+	/****************info bulle****************/
+.infoBulle{
+height: 250px;
+width: 500px;
+margin: auto;
+padding-top: 15px;
+background: #444;
+box-shadow: 0 0 50px #222 inset/*effet à l'intérieur de l'élément*/
+}
+.infoBulle p{
+text-align: center;
+padding-top: 30px;
+}
+.infoBulle a{
+color: #ccc;
+text-shadow: 0 -2px 0 black;
+text-decoration: none;
+border-radius: 3px;
+padding: 5px 15px;
+}
+.infoBulle a:hover{
+	text-shadow: 0 1px 2px black;
+	background: rgba(0,0,0,.4);
+	box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.infoBulle a span{
+	position: absolute;
+	padding: 15px;
+	margin-top: 23px;
+	margin-left: -35px;
+	background: rgba(0,0,0,.9);
+	opacity: 0;
+	color: #09c;
+	transform: scale(0) rotateZ(-12deg);
+	transition: .25s;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.infoBulle a:hover span{
+	opacity: 1;
+	transform: scale(1) rotateZ(0);
+}
+.infoBulle a span:before{
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 10px;
+	border-bottom: 6px solid rgba(0,0,0,.9);
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+	/**************image grayscale & blur******************/
+.imgEffets{
+	width: 302px;
+	height: 320px;
+	margin: 70px auto;
+}
+.imgEffets li{
+	list-style: none;
+	float: left;
+	width: 141px;
+	height: 150px;
+	margin: 5px;
+}
+.imgEffets li:nth-child(3){
+	clear: both;
+}
+.imgEffets img{
+	position: absolute;
+	z-index: 1;
+	height: 150px;
+	box-shadow: 0 0 3px black;
+	transition: 0.5s cubic-bezier(0,3,.4,1);
+}
+.imgEffets li:hover img{
+	z-index: 2;
+	transform: scale(1.5);
+	box-shadow: 0 0 10px black;
+}
+.imgEffets:hover li:not(:hover) img{/*au survol de la souris je mets l'effet en gris ect.. sauf celle qui est en hover*/
+	filter: grayscale(1) blur(10px);
+
+}
+
+	/****************menu rotation****************/
+#menuRotate{
+	height: 360px;
+	width: 576px;
+	margin: 100px auto;
+	background: #B9D4F1;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid white;
+}
+#menuRotate .masque{
+	position: absolute;
+	z-index: 50;
+	width: 585px;
+	height: 135px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#7577CD,#B9D4F1);
+}
+#menuRotate .ombre{
+	position: absolute;
+	z-index: 40;
+	width: 300px;
+	height: 6px;
+	box-shadow: 0 100px 3px black;
+	border-radius: 75px / 3px;/*rayon horizontaux / rayon verticaux*/
+	top: 30px;
+	left: 142px;
+}
+#menuRotate dl{
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 155px;
+	color: #324040;
+	text-align: center;
+	background: #04b3d2;
+	border-radius: 4px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.7);
+	transform-origin: 50% 120px;
+	animation: bounceOut 0.7s ease-in-out;
+}
+#menuRotate dt{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+}
+#menuRotate dd{
+	transform: rotate(180deg);
+}
+#menuRotate dd a{
+	display: block;
+	height: 24px;
+	padding: 3px 0;
+	color: #324040;
+	text-decoration: none;
+}
+#menuRotate dd a:hover{
+	background: rgba(255,255,255,0.1);
+}
+#menuRotate dl:hover{
+	transform: rotate(-180deg);
+	animation: bounceIn 0.7s ease-in-out;
+}
+@keyframes bounceIn{
+	from{transform: rotate(0deg); }
+	75%{transform: rotate(-200deg); }
+	90%{transform: rotate(-175deg); }
+	to{transform: rotate(-180deg); }
+}
+@keyframes bounceOut{
+	from{transform: rotate(0deg); }
+	0%{transform: rotate(-180deg); }
+	10%{transform: rotate(-165deg); }
+	to{transform: rotate(-360deg); }
+}
+
+
+/********************FIN PAGE ANIMATION******************************/
 
 
 

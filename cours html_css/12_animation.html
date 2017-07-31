@@ -2,9 +2,9 @@
 <html lang="fr">
     <head><!-- En-tête du document -->
         <meta charset="UTF-8">
-        <meta name="description" content="Mes liens en HTML/CSS"> <!-- Les moteurs de recherches s'en servent pour les recherches -->
+        <meta name="description" content="Mes animations en HTML/CSS"> <!-- Les moteurs de recherches s'en servent pour les recherches -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Les listes</title>
+        <title>Les animations</title>
         <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lemonada|Old+Standard+TT" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -47,7 +47,43 @@
         </nav>
         <main>
             <h2>Animation</h2>
-
+            <section>
+                <h3>Infobulle</h3>
+                <div class="infoBulle">
+                    <p>
+                        <a href="#">Passez la souris !<span> Salut je suis un popup</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Ici aussi !<span> Salut un autre popup</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Une fois encore<span> Salut encore un popup</span></a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Effet de survol avec transitions et filtres CSS</h3>
+                <ul class="imgEffets">
+                    <li><img src="img/survol_img1.jpg" alt=""></li>
+                    <li><img src="img/survol_img2.jpg" alt=""></li>
+                    <li><img src="img/survol_img3.jpg" alt=""></li>
+                    <li><img src="img/survol_img4.jpg" alt=""></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="">...</a></dd>
+                        <dd><a href="">Delicious</a></dd>
+                        <dd><a href="">Facebook</a></dd>
+                        <dd><a href="">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div>
+                </article>
+            </section>
         </main>
         <footer>
             <!-- Zone du bas, ex : liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright -->
