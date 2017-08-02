@@ -1,0 +1,23 @@
+.container{
+    border: 1px solid;
+}
+.bordureRouge{
+    border: 3px solid #C62727;
+    padding: 10px;
+}
+.bordureVerte{
+    border: 3px solid #BADF96;
+    padding: 10px;
+}
+.bordureBleu{
+    border: 3px solid #2866AB;
+    padding: 10px;
+}
+.bordureJaune{
+    border: 3px solid #F6C90E;
+    padding: 10px;
+}
+.bordureOrange{
+    border: 3px solid #FC8A15;
+    padding: 10px;
+}

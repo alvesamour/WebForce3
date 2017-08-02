@@ -1,0 +1,45 @@
+body, p{
+    margin: 0;
+}
+main{
+    border: 2px solid;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;/*bloc la largeur à maximum 1200px*/
+}
+header{
+    background: #303481;
+    height: 15vh;
+}
+nav{
+    background: #8E9FE6;
+    height: 5vh;
+}
+section{
+    background: #626F92;
+    margin: 2%;
+}
+footer{
+    background: #474168;
+    height: 7.5vh;
+}
+.a, .b, .c, .d{
+    float: left;
+    width: 50%;
+    height: 28vh;
+}
+.a{
+    background: #6ACAFC;
+}
+.b{
+    background: #6CE6DD;
+}
+.c{
+    background: #0B5269;
+}
+.d{
+    background: #2994B2;
+}
+.clear{
+    clear: both;
+}
