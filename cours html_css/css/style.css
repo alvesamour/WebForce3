@@ -1131,10 +1131,12 @@ padding: 5px 15px;
 	}
 	.videoFond{
 		z-index: 1;
-	}
-	.videoFond p{
-		z-index: 1;
 		position: static;
 	}
+	.videotexte p{
+		z-index: 1;
+		width: 50%;
+	}
+
 }
 /*******************FIN PAGE RESPONSIVE*************************/
