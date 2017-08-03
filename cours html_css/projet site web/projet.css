@@ -1,0 +1,161 @@
+body{
+    margin: 100px;
+    border: 2px solid black;
+
+}
+.imageFond{
+    background: url(../img/papier_peint.jpg);
+}
+header{
+    background: linear-gradient(to left, #DBDBEB, #6A759B);
+    height: 160px;
+}
+h1{
+    text-align: center;
+    font-family:  'Lemonada', cursive;
+    margin-left: 90px;
+}
+h2{
+    font-family: 'Lemonada', cursive;
+}
+main{
+	height: 1597px;
+    margin: 10px;
+}
+section{
+	height: 790px;
+    width: 50%;
+	margin: 358px;
+    text-align: center;
+	padding: 0;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+#info{
+    padding-top: 10px;
+    margin-top: 113px;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to left, #DBDBEB, #6A759B);
+}
+#info a{
+    text-decoration: none;
+    margin-left: 42%;
+    color: #14103B;
+    text-align: center;
+}
+#logo{
+    padding: 10px;
+    float: left;
+}
+img{
+    width: 209px;
+    height: 111px;
+    margin-left: 70px;
+}
+#slogan{
+	width: 50%;
+	float: left;
+	height: 100px;
+}
+#reseauxSociaux i{
+	color: #7577CD;
+	font-size: 30px;
+	display: block;
+	text-align: right;
+	padding: 36px 30px 0 0;
+}
+#reseauxSociaux a{
+    text-decoration: none;
+}
+nav{
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    font-size: 22px;
+    height: 2px;
+}
+nav a{
+    text-decoration: none;
+    border-radius: 62px;
+    background: #EAE7ED;
+    color: #2A3356;
+    padding: 7px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+    margin: 7px;
+    text-decoration: none;
+    transition: 1s;
+    border: 1px solid white;
+}
+nav a:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+#c1{
+  width: 180%;
+  height:50%;
+  border-radius: 100px;
+  background: rgba(2,2,25,0.5);
+  position:relative;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+#c2{
+  width: 120%;
+  height:50%;
+  border-radius: 100px;
+  background: rgba(106, 187, 213, 0.8);
+  position:relative;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+#c3{
+  width: 180%;
+  height:50%;
+  border-radius: 100px;
+  background: rgba(5,5,35,0.5);
+  position:relative;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+#c4{
+width: 120%;
+height: 50%;
+border-radius: 100px;
+background: rgba(106, 187, 213, 0.8);
+position:relative;
+transition: opacity .5s ease-out;
+-moz-transition: opacity .5s ease-out;
+-webkit-transition: opacity .5s ease-out;
+-o-transition: opacity .5s ease-out;
+}
+#c1:hover{
+    transition: 1s;
+    background: rgba(106, 187, 213, 0.8);
+}
+#c2:hover{
+    transition: 1s;
+    background: rgba(5,5,35,0.5);
+}
+#c3:hover{
+    transition: 1s;
+    background: rgba(106, 187, 213, 0.8);
+}
+#c4:hover{
+    transition: 1s;
+    background: rgba(5,5,35,0.5);
+}
+#contenu{
+    margin: 0;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 'lemonada';
+}
