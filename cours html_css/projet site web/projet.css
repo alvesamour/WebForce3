@@ -1,22 +1,30 @@
 body{
-    margin: 100px;
+    margin: 200px;
     border: 2px solid black;
-
+    background: url(../img/mochaGrunge.png);
+    border-radius: 60px;
 }
 .imageFond{
-    background: url(../img/papier_peint.jpg);
+    background: url(../img/papier_peint.jpg)no-repeat fixed;
+    background-size: cover;
+    border-radius: 60px;
 }
 header{
     background: linear-gradient(to left, #DBDBEB, #6A759B);
     height: 160px;
+    border-radius: 60px;
 }
 h1{
     text-align: center;
-    font-family:  'Lemonada', cursive;
-    margin-left: 90px;
+    font-family: 'Pacifico', cursive;
+    margin-left: 200px;
+    color: #393E46;
+    animation-duration: 2s;
+    animation-name: bounceIn;
 }
 h2{
-    font-family: 'Lemonada', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 37px;
 }
 main{
 	height: 1597px;
@@ -37,6 +45,7 @@ section{
     width: 100%;
     height: 90px;
     background: linear-gradient(to left, #DBDBEB, #6A759B);
+    border-radius: 80px;
 }
 #info a{
     text-decoration: none;
@@ -49,9 +58,9 @@ section{
     float: left;
 }
 img{
-    width: 209px;
-    height: 111px;
-    margin-left: 70px;
+    width: 226px;
+    height: 136px;
+    margin-left: 24px;
 }
 #slogan{
 	width: 50%;
@@ -86,76 +95,107 @@ nav a{
     text-decoration: none;
     transition: 1s;
     border: 1px solid white;
+    font-family: 'Courgette', cursive;
+
 }
 nav a:hover{
     box-shadow: none;
     cursor: pointer;
 }
 #c1{
-  width: 180%;
-  height:50%;
-  border-radius: 100px;
-  background: rgba(2,2,25,0.5);
-  position:relative;
-  transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -webkit-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out;
-}
-#c2{
+  float: left;
   width: 120%;
   height:50%;
   border-radius: 100px;
-  background: rgba(106, 187, 213, 0.8);
+  background: rgba(255,255,255,0.5);
   position:relative;
   transition: opacity .5s ease-out;
   -moz-transition: opacity .5s ease-out;
   -webkit-transition: opacity .5s ease-out;
   -o-transition: opacity .5s ease-out;
+  margin-left: 1%;
 }
-#c3{
-  width: 180%;
+#c2{
+  float: right;
+  width: 120%;
   height:50%;
   border-radius: 100px;
-  background: rgba(5,5,35,0.5);
+  background: rgba(255,255,255,0.5);
   position:relative;
   transition: opacity .5s ease-out;
   -moz-transition: opacity .5s ease-out;
   -webkit-transition: opacity .5s ease-out;
   -o-transition: opacity .5s ease-out;
+  margin-right: -86%;
+  margin-top: 28px;
+}
+#c3{
+  float: left;
+  width: 120%;
+  height:50%;
+  border-radius: 100px;
+  background: rgba(255,255,255,0.5);
+  position:relative;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  margin-top: 28px;
 }
 #c4{
+float: right;
 width: 120%;
 height: 50%;
 border-radius: 100px;
-background: rgba(106, 187, 213, 0.8);
+background:  rgba(255,255,255,0.5);
 position:relative;
 transition: opacity .5s ease-out;
 -moz-transition: opacity .5s ease-out;
 -webkit-transition: opacity .5s ease-out;
 -o-transition: opacity .5s ease-out;
+margin-right: -86%;
+margin-top: 28px;
 }
 #c1:hover{
     transition: 1s;
-    background: rgba(106, 187, 213, 0.8);
+    background: rgba(91, 88, 94, 0.07);
 }
 #c2:hover{
     transition: 1s;
-    background: rgba(5,5,35,0.5);
+    background: rgba(91, 88, 94, 0.07);
 }
 #c3:hover{
     transition: 1s;
-    background: rgba(106, 187, 213, 0.8);
+    background: rgba(91, 88, 94, 0.07);
 }
 #c4:hover{
     transition: 1s;
-    background: rgba(5,5,35,0.5);
+    background: rgba(91, 88, 94, 0.07);
 }
 #contenu{
     margin: 0;
 }
+li{
+    list-style-type: none;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
 p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 'lemonada';
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+@keyframes bounceIn {
+    0%{
+        transform: scale(0.1);
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.clear{
+    clear: both;
 }
