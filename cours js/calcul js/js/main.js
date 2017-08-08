@@ -12,10 +12,7 @@ window.onload = function () {//on attent que le document soit entièrement charg
     var resultField = document.getElementById("result-field");
 
     // on déclare la fonction calculate()
-    function calculate() {
-        // on récupère la propriété value (le contenu) des champs
-        var value1 = parseInt(number1.value, 10);
-        var value2 = parseInt(number2.value, 10);
+    function calculate(value1, value2) {
 
         // on additionne les 2 valeurs
         var result = value1 + value2;
@@ -24,9 +21,6 @@ window.onload = function () {//on attent que le document soit entièrement charg
 
         console.log(result);
     }
-
-    // on éxecute l a fonction calculate
-    calculate ();
 
     // var calculate = function () {};
 
@@ -45,6 +39,16 @@ window.onload = function () {//on attent que le document soit entièrement charg
         // bloque l'envoi du formulaire vers le serveur
         e.preventDefault();
 
-        calculate ();
+        // on récupère la propriété value (le contenu) des champs
+        var value1 = parseFloat(number1.value, 10);
+        var value2 = parseFloat(number2.value, 10);
+
+        if(!Number.isNaN(value1)
+        && !Number.isNaN(value2))
+        {
+            calculate(value1, value2);
+        } else {
+            alert("erreur");
+        }
     });
 };

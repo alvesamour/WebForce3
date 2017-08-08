@@ -1,0 +1,100 @@
+Javascript:
+
+
+string :
+var str = "ma chaîne de caractère" + "deuxième partie"; 
+
+number : 
+float (nombre à virgule 3.1153656)
+int (nombre entier 25)
+
+boolean :
+(true ou false) (test de valeur ou retour de fonction)
+
+array :
+liste de donnée de même nature (que des numbers ou string ect...)
+se présente sous cette forme :
+var myArr = ["pommme", "banane"; "figue"]
+
+object :
+liste de propriété pas forcément du même type
+se présente sous cette forme :
+var myObject = {
+    "nom" : "Guéchoum", 
+    "prenom" : "Anthony", 
+    "âge" : 25
+};
+
+alert (myArr[1]); // > renvoie "banane"
+myArr.lenght // > nombre d'éléments dans le tableau
+
+myObject.prenom // > renvoie la valeur de la propriété prénom de l'object myObject
+myObject ["prenom"] // idem
+
+opérateurs :
++ - * / % 
+2 + 5 // > renvoie 7
+2 - 5 // > renvoie 3
+2 * 5 // > renvoie 10
+2 / 5 // > renvoie 0.4
+2 % 5 // > renvoie 2
+
+fonctions :
+function myFunction (myArg1, myArg2) {
+  // instructions qui vont être executées à l'appel de la fonction
+}
+
+var myFunction = function (myArg1, myArg2){};
+
+// appel 
+myFunction (2, 56);	
+
+function returning () {
+return "bonjour";
+}
+
+// on stocke la valeur de retour de la fonction returning dans la variable myVar
+var myVar = returning ();
+
+function calculate (value1, value2) {
+return value1 + value2;
+}
+
+result1 = calculate(1, 7);
+result2 = calculate (13, 7);
+
+alert(result1);
+
+var myVar2;
+myVar2 = 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
