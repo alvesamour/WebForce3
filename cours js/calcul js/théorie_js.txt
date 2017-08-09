@@ -68,6 +68,190 @@ alert(result1);
 var myVar2;
 myVar2 = 2;
 
+if/else :
+
+if (conditions) {
+   //intructions
+}
+
+if (conditions) {
+   //instructions
+} else {
+  //instructions si les conditions ne sont pas respectées
+}
+
+if (conditions) {
+  //instructions
+} else if (conditions2) {
+  //instructions si les conditions ne sont pas respectées ET que les conditions2 sont respectées
+}
+
+if (conditions) {
+  //instructions 
+}
+
+if (conditions2) {
+  //instructions si les conditions2 sont respectées
+}
+
+opérateurs de comparaisons :
+
+<>
+<= >=
+0 < 21 // renvoie true
+0 < 0 // renvoie false
+0 > -7 // renvoie true
+0 > 21 // renvoie false
+0 > 0 // renvoie false
+0 <= 0 // renvoie true
+0 >= 0 // renvoie true
+
+==
+1 == 1 // renvoie true
+1 == 0 // renvoie false
+1 == "1" // renvoie true
+
+=== (égalité srticte)
+1 === 1 // renvoie true
+1 === "1" // renvoie false
+1.0 === 1 // renvoie false
+
+!= (inégalité)
+1 != 1 // renvoie false
+1 != 0 // renvoie true
+1 != "1" // renvoie false
+
+!== (inégalité stricte)
+1 !== 1 // renvoie false
+1 !== 0 // renvoie true
+1 !== "1" // renvoie true
+
+typeof 1 // renvoie "number"
+typeof "bonjour" // renvoie "string"
+typeof myVar // renvoie "undefined" (la variable myVar est vide ou non définie)
+
+opérateurs logiques :
+
+&&
+if (conditions1 && conditions2) {
+  //instructions exécutées si les deux conditions renvoie true
+}
+
+||
+if (conditions1 || conditions2) {
+  //instructions exécutées si au moins une des deux conditions renvoie true
+}
+
+if ((conditions1 || conditions2) && (conditions3 || conditions4)) {
+  // si conditions1 et/ou conditions2 renvoient true ET conditions3 et/ou conditions4 renvoient true
+}
+
+!
+if (!condition) {
+  // s'exécute si condition est false
+}
+if (condition === false){}
+if (condition != true){}
+
+if (!(condition || conditions2)) {
+  // si aucune des conditions n'est true
+}
+
+incrémentations :
+var i = 0;
+
+i = i + 1; // i = 1
+i += 1; // i = 2
+i++; // i = 3
+
+i+= 2; // i = 5
+
+i = i -1; // 4
+i -= 1; // 3
+i--; // 2
+
+i*= 2; // 4
+i /=2; // 2
+
+i%= 2; // 0
+
+var j = 0;
+while/tant que (j < 10) { //tant que j est inférieur à 10
+   j++; // j'incrémente j de 1
+}
+
+for (i = 0; i < 10; i++) {
+
+}
+
+var myArr = ["chat", "chien", "loutre", "poney"];
+for (item in myArr) { // pour chaque entrée dans le tableau
+    alert(myArr[item]);
+}
+
+var myObject = {"nom" : "Fkaier", "prenom" : "Sara"};
+for (property in myObject) { // pour chaque propriété de l'objet 
+    alert(property); // affiche le nom de la propriété 
+    alert(myObject[property]); // affiche la valeur de la propriété
+
+for (i = 0; i < myArr.length; i++) { // pour chaques entré dans le tableau myArr
+    
+alert (myArr[i]);
+
+}
+
+var word = "pomme";
+switch (word) { // on teste la valeur de word
+     case "banane" : // if (word == "banane")
+     break;
+   
+     case "pomme" : // else if (word == "pomme")
+
+     break;
+
+     default : // cas par défaut (else)
+     break;
+
+// Portée (scope) des variables / fonctions
+
+// scope : window
+
+var myVar; // variable globale : accessible dans toute la page
+
+function muFunc () { // fonction gloable
+    var var2; // variable locale : accessible uniquement dans la fonction
+    var3; // variable globale
+}
+
+//////////////////////////////////////////////
+
+var myString = "test"; // équivalent de window.myString = "test"
+
+function myFunc (myString) {
+     alert(myString);
+}
+
+muFunc ("pomme"); // alert "pomme"
+
+function func2 () {
+    var myString = "restest";
+    alert(window.myString); // correspond à la variable globale ("test")
+    alert(myString); // correspond à la variable locale ("retest")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
