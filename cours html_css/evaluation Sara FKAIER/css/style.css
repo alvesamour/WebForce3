@@ -68,7 +68,7 @@ h4{
     color: #EB43A3;
     font-family: 'Courgette', cursive;
     position: relative;
-    left: 613px;
+    left: 816px;
     bottom: 442px;
 }
 img[src="img/rainbow.png"] {
@@ -98,9 +98,8 @@ p{
     font-family: Arial, sans-serif;
 }
 li{
-    text-align: center;
     position: relative;
-    left: 17px;
+    left: 815px;
     bottom: 447px;
     padding-top: 9px;
     font-family: Arial, sans-serif;
@@ -108,7 +107,7 @@ li{
 }
 form{
     position: relative;
-    left: 613px;
+    left: 815px;
     bottom: 447px;
     padding-top: 9px;
 }
@@ -129,21 +128,27 @@ footer{
 }
 .b{
     position: relative;
-    left:  613px;
+    left:  815px;
     bottom: 447px;
     padding-top: 9px;
     font-family: Arial, sans-serif;
 }
 .image{
-    padding: 11px;
     float: left;
+}
+figure{
+	overflow: hidden;
+}
+.image:hover{
+	transform: scale(1.2);
+	transition: 0.5s;
 }
 figcaption{
 	text-align: center;
     position:absolute;
     z-index: 1;
     width: 100%;
-    bottom: -189px;
+    bottom: -181px;
  }
 .c{
     padding-left: 91%;
@@ -152,6 +157,7 @@ figcaption{
 #result{
     background: #C55394;
     margin-top: 5px;
+	border: none;
 }
 .d{
     padding-left: 3%;
