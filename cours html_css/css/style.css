@@ -886,7 +886,8 @@ label[for="orange"], label[for="fraise"], label[for="abricot"] {
 .videoFond video{
 	position: absolute;
 	z-index: 1;
-	width: 100%;
+	width: 500px;
+	margin: auto;
 }
 .videoTexte{
 	position: relative;
