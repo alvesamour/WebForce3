@@ -2,14 +2,15 @@ body{
     border: 2px solid;
     margin: 367px;
     padding: 215px;
+    margin-top: 183px;
 }
-#conteneur{
+#block{
     background: lavender;
-    border: 1px solid;
     width: 50px;
     height: 50px;
     position: absolute;
-    margin-top: -209px;
+    top: 194px;
+    left: 568px;
 }
 #my-form{
     margin-left: 62px;
