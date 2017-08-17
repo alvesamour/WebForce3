@@ -1,14 +1,41 @@
 window.onload = function () {
-    var left = document.getElementById("left");
-    var top = document.getElementById("top");
-    var myDiv = document.getElementById("carré");
-}
-myform.addEventListener ('submit, function (e)') {
-    e.preventDefault();
-    var left = left.value;
-    var top = top.value;
+    var myForm = document.getElementById("my-form");
+    var leftField = document.getElementById("left");
+    var topField = document.getElementById("top");
+    var block = document.getElementById("block");
+    var timer;
 
-    myDiv.style.left = valleft + "px";
-    myDiv.style.top = valtop + "px";
-)};
+    var move = function (e) {
+        e.preventDefault();
+        clearInterval(timer); // on supprime l'intervalle s'il existe déjà
+
+        var leftValue = parseFloat(leftField.value);
+        var topValue = parseFloat(topField.value);
+
+        if (!Number.isNaN(leftValue) && !Number.isNaN(topValue)) {
+            // on définit une fonction qui s'exécutera à intervalle régulier de 500 millisecondes
+            timer = setInterval (function () {
+                var blockPosY = block.offsetTop; //position verticale actuelle du block
+                var blockPosX = block.offsetLeft; //postion horizontale actuelle du block
+
+                if (topValue > blockPosY) {// si la destiantion est supérieur à l'origine
+                    block.style.top = blockPosY + 1 + "px";
+                } else if (topValue < blockPosY) {
+                    block.style.top = blockPosY - 1 + "px";
+                }
+
+                if (topValue > blockPosX) {
+                    block.style.left = blockPosX + 1 + "px";
+                } else if (topValue < blockPosX) {
+                    block.style.left = blockPosX - 1 + "px";
+                }
+
+            }, 50);
+
+            // block.style.top = topValue +"px";
+            // block.style.left= leftValue +"px";
+        }
+    }
+
+    myForm.addEventListener ("submit", move);
 }
