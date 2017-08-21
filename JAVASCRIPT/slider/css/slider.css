@@ -8,7 +8,7 @@
 }
 .slider-wrapper{
     position: relative;
-    width: 400px;
+    width: 600px;
     height: 350px;
     margin: auto;
     overflow: hidden;
@@ -23,17 +23,17 @@
 .slide{
     float: left;
     height: 100%;
-    width: 400px;
+    width: 600px;
     color: white;
 }
 .slide:first-child{
-    background: #19215E;
+    background: url(../img/cat.jpg);
 }
 .slide:nth-child(2){
-    background: #626F92;
+    background: url(../img/meduse.jpg);
 }
 .slide:nth-child(3){
-    background: #8E9FE6;
+    background: url(../img/cafe.jpg);
 }
 .slider-nav{
     position: absolute;
