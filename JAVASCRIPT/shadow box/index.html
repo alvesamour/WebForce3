@@ -12,25 +12,35 @@
 <body>
     <div id="thumbnail-wrapper">
         <!-- Vignettes -->
-        <div class="thumbnail"><img src="img/coquillage.jpg"></div>
-        <div class="thumbnail"><img src="img/rain.jpg"></div>
-        <div class="thumbnail"><img src="img/tiger.jpg"></div>
-        <div class="thumbnail"><img src="img/wolf.jpg"></div>
+        <div class="thumbnail">
+            <a href="#" class="open-slider" data-slide="0"><img src="img/coquillage.jpg"></a>
+        </div>
+        <div class="thumbnail">
+            <a href="#" class="open-slider" data-slide="1"><img src="img/rain.jpg"></a>
+    </div>
+        <div class="thumbnail">
+            <a href="#" class="open-slider" data-slide="2"><img src="img/tiger.jpg"></a>
+        </div>
+        <div class="thumbnail">
+            <a href="#" class="open-slider" data-slide="3"><img src="img/wolf.jpg"></a>
+        </div>
     </div>
 
     <!-- Visionneuse -->
     <div id="shadow">
         <div id="slider-wrapper">
-            <div class="slide"><img src="img/coquillage.jpg"></div>
-            <div class="slide"><img src="img/rain.jpg"></div>
-            <div class="slide"><img src="img/tiger.jpg"></div>
-            <div class="slide"><img src="img/wolf.jpg"></div>
-        </div>
+            <div id="slide-container">
+                <div class="slide"><img src="img/coquillage.jpg"></div>
+                <div class="slide"><img src="img/rain.jpg"></div>
+                <div class="slide"><img src="img/tiger.jpg"></div>
+                <div class="slide"><img src="img/wolf.jpg"></div>
+            </div>
 
-        <!-- Navigation -->
-        <div id="slider-nav">
-            <a href="#" class="btn-prev">&lt;</a>
-            <a href="#" class="btn-next">&gt;</a>
+            <!-- Navigation -->
+            <div id="slider-nav">
+                <a href="#" class="btn-prev" data-direction="prev">&lt;</a>
+                <a href="#" class="btn-next" data-direction="next">&gt;</a>
+            </div>
         </div>
     </div>
 </body>
