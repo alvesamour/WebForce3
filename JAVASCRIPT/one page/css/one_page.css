@@ -11,12 +11,13 @@ html, body{
     width: 100%;
     height: 100%;
     position: relative;
+    /*background: url(../img/papier-peint.jpg);*/
 }
 
 #main-header{
     background: lavender;
     position: fixed;
-    height: 60px;
+    height: 62px;
     width: 100%;
 }
 
@@ -40,14 +41,50 @@ html, body{
 #main-nav ul li a{
     text-decoration: none;
     color: #03051E;
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 #main-nav ul li:hover{
     background: #C3BEF0;
     transition: all 0.5s ease-in;
+    box-sizing: border-box;
+}
+#reseauxSociaux{
+	width: 25%;
+	float: left;
+}
+#reseauxSociaux i{
+	font-size: 30px;
+	display: block;
+	text-align: right;
+    color: #646ECB;
+    width: 82%;
+    position: relative;
+    left: 1497px;
+}
+#reseauxSociaux a{
+    text-decoration: none;
 }
 
+#info{
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    padding-top: 125px;
+    color: #03051E;
+}
+#info a{
+    text-decoration: none;
+    color: #03051E;
+}
+#info p{
+    text-align: center;
+    color: #03051E;
+}
+strong{
+    font-family: 'Gloria Hallelujah', sans-serif;
+}
 .page{
     width: 100%;
     height: 100%;
@@ -56,13 +93,26 @@ html, body{
     box-sizing: border-box;
     font-size: 30px;
 }
-
+h2{
+    font-family: 'Gloria Hallelujah', sans-serif;
+}
 #presentation{
-    background: #586B8F;
+    background: url(../img/papier-peint.jpg)no-repeat;
+    background-size: cover;
 }
 
 #competences{
     background: #555273;
+}
+.carre{
+    margin-top: 61px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 22%;
+    height: 139px;
+    font-size: 16px;
+    color: black;
 }
 
 #experiences{
@@ -71,4 +121,51 @@ html, body{
 
 #formation{
     background: #070739;
+}
+
+#contact{
+    background: #CADEFC;
+}
+form{
+	width: 60%;
+	background : #F9F9F9;
+	margin: 96px auto;
+	padding: 20px;
+	color: #383746;
+	border-radius: 15px;
+	border: 2px solid black;
+    font-size: 23px;
+}
+label{
+	margin: 10px 0;
+	width: 50%;
+	display: inline-block;
+}
+textarea{
+	resize: none;
+}
+.bouton{
+    background: lavender;
+    border: 1px solid white;
+    position: relative;
+    bottom: 5px;
+}
+#prenom{
+    border: 1px solid black;
+    height: 30px;
+}
+#mdp{
+    border: 1px solid black;
+    height: 30px;
+}
+#email{
+    border: 1px solid black;
+    height: 30px;
+}
+#cp{
+    border: 1px solid black;
+    height: 30px;
+}
+#message{
+    border: 1px solid black;
 }
