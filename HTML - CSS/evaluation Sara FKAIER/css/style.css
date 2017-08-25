@@ -181,7 +181,7 @@ figcaption{
 figure p{
     background: rgba(0,0,0,0.5);
     position:absolute;
-    top: 220px;
-	  width: 10%;
-	  font-family: 'Courgette', cursive;
+    top: -276px;
+	width: 10%;
+	font-family: 'Courgette', cursive;
 }
