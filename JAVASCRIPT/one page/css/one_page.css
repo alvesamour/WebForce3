@@ -11,6 +11,7 @@ html, body{
     width: 100%;
     height: 100%;
     position: relative;
+    perspective: 800px;
     /*background: url(../img/papier-peint.jpg);*/
 }
 
@@ -168,4 +169,46 @@ textarea{
 }
 #message{
     border: 1px solid black;
+}
+.coucou
+{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 687px;
+    opacity: 0.5;
+    border: 2px solid #444;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: arial, sans-serif;
+    transition: 2s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+#devant
+{
+    z-index: 100;
+    background-image: linear-gradient(white, rgba(117, 0, 128, 0.19));
+}
+
+#derriere
+{
+    z-index: 50;
+    background-image: linear-gradient(white, red);
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+}
+
+#devant:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+/*
+Astuce :
+Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+*/
+#devant:hover + #derriere
+{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
 }
