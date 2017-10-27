@@ -3,28 +3,28 @@
 require_once("init.inc.php");
 
 $tab = array();
-$tab['monresultat'] = '';
+$tab['resultat'] = '';
 
 $resultat = $pdo -> query("SELECT * FROM employes");
 
-$tab['monresultat'] .= '<table border="10">';
+$tab['resultat'] .= '<table border="10">';
 
-$tab['monresultat'] .= '<tr>';
+$tab['resultat'] .= '<tr>';
 
 for($i = 0; $i < $resultat->columnCount(); $i++ ){ // compter le nombre de collones
   $colonne = $resultat->getColumnMeta($i); // permet afficher les information de chaque colonne
-  $tab['monresultat'] .= '<th>' . $colonne['name'] . '</th>';
+  $tab['resultat'] .= '<th>' . $colonne['name'] . '</th>';
 }
 
 while($enregistrement = $resultat -> fetch(PDO::FETCH_ASSOC)){ // tant qu'il a un employe dans la base de donne il va faire un faire traitement permet l'affichage de l'employe
 
 
-   $tab['monresultat'] .= '</tr>';
+   $tab['resultat'] .= '</tr>';
     foreach($enregistrement as $valeur){
-      $tab['monresultat'] .= '<td>' . $valeur . '</td>';
+      $tab['resultat'] .= '<td>' . $valeur . '</td>';
 
    }
-    $tab['monresultat'] .= '</tr>';
+    $tab['resultat'] .= '</tr>';
 
 }
 
