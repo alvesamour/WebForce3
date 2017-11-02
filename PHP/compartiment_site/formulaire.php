@@ -38,11 +38,6 @@ include('inc/nav.inc.php');
 
                     <input type="submit" name="Envoyer" value="Envoyer">
                     <input type="reset" name="Annuler" value="Annuler">
-
-
-
-
-
                 </form>
             </section>
         </main>
