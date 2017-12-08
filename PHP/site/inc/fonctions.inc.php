@@ -124,17 +124,4 @@ function retirerProduit($id){
     // Le 3ème argument de array_splice() détermine le nombre d'élément à supprimer et le sens.
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
