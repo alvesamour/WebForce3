@@ -73,7 +73,7 @@ $success = 'Message envoyé !';
 
                   <div class="form-group">
                     <label for="nom">Nom : </label>
-                    <span class="error"><?php if (isset($erreurnom)) echo $errornom; ?></span>
+                    <span class="error"><?php if (isset($errornom)) echo $errornom; ?></span>
                     <input class="form-control" type="text" name="nom" value="<?php if(isset($nom)) echo $nom; ?>">
                   </div>
 
