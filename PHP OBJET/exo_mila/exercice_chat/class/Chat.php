@@ -147,13 +147,13 @@ Pour savoir quel opérateur utiliser, 2 questions à se poser :
       */
        public function getInfos(){
        	$infos = [
-          	'prenom' => $this->getPrenom(),
-              'age' => $this->getAge(),
-              'couleur' => $this->getCouleur(),
-              'sexe' => $this->getSexe(),
-              'race' => $this->getRace()
-          ];
+          'prenom' => $this->getPrenom(),
+          'age' => $this->getAge(),
+          'couleur' => $this->getCouleur(),
+          'sexe' => $this->getSexe(),
+          'race' => $this->getRace()
+        ];
 
-          return $infos;
+        return $infos;
        }
    }

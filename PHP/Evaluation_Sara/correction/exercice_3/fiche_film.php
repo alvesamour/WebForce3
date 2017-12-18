@@ -1,15 +1,15 @@
 <?php
-// Ici je dois etre capable d'afficher les informations complémentaires de chaque film... 
+// Ici je dois etre capable d'afficher les informations complÃ©mentaires de chaque film...
 
-// Donc je le récupérer dans la BDD, grace à.... l'ID de chaque. 
+// Donc je le rÃ©cupÃ©rer dans la BDD, grace Ã .... l'ID de chaque.
 
-// Et comment l'ID va etre transmis à cette page ? PAR LE GET (URL)
+// Et comment l'ID va etre transmis Ã  cette page ? PAR LE GET (URL)
 
 $pdo = new PDO('mysql:host=localhost;dbname=exercice_3', 'root', '');
 
 $resultat = $pdo -> prepare("SELECT * FROM movies WHERE id_movies = :id");
 $resultat -> bindParam(':id', $_GET['id'], PDO::PARAM_INT);
-$resultat -> execute(); 
+$resultat -> execute();
 
 if($resultat -> rowCount() == 0){
 	header('location:index.php');
@@ -35,13 +35,9 @@ if(strpos($video, 'watch?v=')){
 
 <ul>
 	<li>Acteur : <?= $actors ?></li>
-	<li>Réal : <?= $director ?></li>
+	<li>Rï¿½al : <?= $director ?></li>
 	<li>Producteur : <?= $producer ?></li>
 	<li>Date de sortie : <?= $year_of_prod ?></li>
 	<li>Langue : <?= $language ?></li>
 	<li><a href="<?= $video ?>">Lien de  la BA</a></li>
 </ul>
-
-
-
-

@@ -1,15 +1,15 @@
-﻿<?php 
+﻿<?php
 
 $pdo = new PDO('mysql:host=localhost;dbname=exercice_3', 'root', '');
 
 $msg = '';
 
 if(!empty($_POST)){
-	
+
 	// echo '<pre>';
 	// print_r($_POST);
-	// echo '</pre>'; 
-	
+	// echo '</pre>';
+
 	if(!empty($_POST['title'])){
 		if(strlen($_POST['title']) < 5){
 			$msg .= '<p>Le champs TITRE doit comporter au moins 5 caractères !</p>';
@@ -19,7 +19,7 @@ if(!empty($_POST)){
 		$msg .= '<p>Le champs TITRE est obligatoire !</p>';
 	}
 
-	
+
 	if(!empty($_POST['director'])){
 		if(strlen($_POST['director']) < 5){
 			$msg .= '<p>Le champs REALISATEUR doit comporter au moins 5 caractères !</p>';
@@ -28,7 +28,7 @@ if(!empty($_POST)){
 	else{
 		$msg .= '<p>Le champs REALISATEUR est obligatoire !</p>';
 	}
-	
+
 	if(!empty($_POST['actors'])){
 		if(strlen($_POST['actors']) < 5){
 			$msg .= '<p>Le champs ACTEURS doit comporter au moins 5 caractères !</p>';
@@ -37,8 +37,8 @@ if(!empty($_POST)){
 	else{
 		$msg .= '<p>Le champs ACTEURS est obligatoire !</p>';
 	}
-	
-	
+
+
 	if(!empty($_POST['producer'])){
 		if(strlen($_POST['producer']) < 5){
 			$msg .= '<p>Le champs PRODUCTEUR doit comporter au moins 5 caractères !</p>';
@@ -47,7 +47,7 @@ if(!empty($_POST)){
 	else{
 		$msg .= '<p>Le champs PRODUCTEUR est obligatoire !</p>';
 	}
-	
+
 	if(!empty($_POST['storyline'])){
 		if(strlen($_POST['storyline']) < 5){
 			$msg .= '<p>Le champs SYNOPSIS doit comporter au moins 5 caractères !</p>';
@@ -56,24 +56,24 @@ if(!empty($_POST)){
 	else{
 		$msg .= '<p>Le champs SYNOPSIS est obligatoire !</p>';
 	}
-	
-	
+
+
 	if(!empty($_POST['video'])){
-		
-		
-		if(!filter_var($_POST['video'], FILTER_VALIDATE_URL)) 
+
+
+		if(!filter_var($_POST['video'], FILTER_VALIDATE_URL))
 		{
 			$msg .= '<p>Le champs VIDEO n\'est pas valide !</p>';
-		}	
+		}
 	}
 	else{
 		$msg .= '<p>Le champs VIDEO est obligatoire !</p>';
 	}
-	
-	if(empty($msg)){ // TOUT EST OK !! 
-	
+
+	if(empty($msg)){ // TOUT EST OK !!
+
 		$resultat = $pdo -> prepare("INSERT INTO movies (title, actors, director, producer, year_of_prod, language, category, storyline, video) VALUES (:title, :actors, :director, :producer, :year_of_prod, :language, :category, :storyline, :video)");
-		
+
 		$resultat -> bindParam(':title', $_POST['title'], PDO::PARAM_STR);
 		$resultat -> bindParam(':actors', $_POST['actors'], PDO::PARAM_STR);
 		$resultat -> bindParam(':director', $_POST['director'], PDO::PARAM_STR);
@@ -83,13 +83,13 @@ if(!empty($_POST)){
 		$resultat -> bindParam(':category', $_POST['category'], PDO::PARAM_STR);
 		$resultat -> bindParam(':storyline', $_POST['storyline'], PDO::PARAM_STR);
 		$resultat -> bindParam(':video', $_POST['video'], PDO::PARAM_STR);
-		
+
 		if($resultat -> execute()){
-			$msg .= '<p>Félicitations, le fil a été ajouté !</p>';
+			$msg .= '<p>Félicitations, le film a été ajouté !</p>';
 		}
-		
-		
-	}	
+
+
+	}
 }
 
 
