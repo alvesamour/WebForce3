@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}/* RESET */
+
+/*Haut de page*/
+header{
+    background: url(../img/background.jpg);
+    height: 150px;
+}
+nav{
+    background-color:  #061339;
+    height: 50px;
+}
+/*FIN Haut de page*/
+
+/*Fin de page*/
+footer{
+    background-color:  #061339;
+    height: 30px;
+    color: white;
+    padding-left: 1825px;
+    padding-top: 6px;
+    font-size: 15px;
+}
+
+/*Titre*/
+h1{
+    color: #FFF;
+    font-size: 33px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+h2{
+    font-family: 'Merienda', cursive;
+    color: #2F4073;
+    position: relative;
+    left: 371px;
+    top: 34px;
+    font-size: 28px;
+}
+.titre{
+    font-family: 'Merienda', cursive;
+    color: #FFF;
+    position: relative;
+    left: 371px;
+    top: 15px;
+    font-size: 18px;
+}
+h3{
+    font-family: 'Merienda', cursive;
+    color:  #2F4073;
+    position: relative;
+    top: 131px;
+    left: 317px;
+    font-size: 18px;
+}
+/*FIN Titre*/
+
+/*Conteneur*/
+#formulaire{
+    width: 265px;
+    height: 354px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 277px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+    top: 150px;
+}
+#carousel{
+    width: 1020px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 591px;
+    top: -208px;
+}
+.btn-outline-success {
+    color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+    width: 231%;
+    position: relative;
+    top: 80px;
+}
+#texte{
+    background: #dadada;
+    height: 347px;
+}
+.logo{
+    height: 256px;
+    width: 272px;
+    position: absolute;
+    left: 1444px;
+    bottom: -204px;
+    background: #7885A5;
+}
+.logo:hover{
+    background: #061339;
+}
+p{
+    margin-left: 369px;
+    margin-top: 43px;
+}
+.form-control {
+    display: block;
+    width: 301%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.col-3{
+    position: relative;
+    top: -71px;
+    left: 10px;
+    font-weight: bold;
+}
+.col-2{
+    position: relative;
+    top: 14px;
+    left: 10px;
+    font-weight: bold;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+    margin-left: -26px;
+    margin-top: -47px;
+}
+#chat{
+    width: 432%;
+    height: 90px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 39px;
+    left: -40px;
+}
+.error{
+    color: red;
+    position: relative;
+    top: -73px;
+}
+/*FIN conteneur*/
