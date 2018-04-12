@@ -104,31 +104,4 @@ while ($lignes = $resultat -> fetch_assoc()) { // Cette boucle, grâce à Fetch_
 }
 echo "</table>"; // Fin du tableau.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
